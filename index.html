@@ -1,0 +1,103 @@
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <div class="main">
+            <div class="main__column main__result">
+                <div class="legend">
+                    <ul class="legend__list">
+                        <li class="legend__item" data-category="product">
+                            <span class="legend__category">Продукты</span>
+                            <div class="legend__price" id = "Legend-price-product"></div>
+                        </li>
+                        <li class="legend__item" data-category="fastfood">
+                            <span class="legend__category">ФастФуд</span>
+                            <div class="legend__price" id = "Legend-price-fastfood"></div>
+                        </li>
+                        <li class="legend__item" data-category="sport">
+                            <span class="legend__category">Спорт</span>
+                            <div class="legend__price" id = "Legend-price-sport"></div>
+                        </li>
+                        <li class="legend__item" data-category="drinks">
+                            <span class="legend__category">Напитки</span>
+                            <div class="legend__price" id = "Legend-price-drinks"></div>
+                        </li>
+                        <li class="legend__item" data-category="Household">
+                            <span class="legend__category">Бытовые</span>
+                            <div class="legend__price" id = "Legend-price-Household"></div>
+                        </li>
+                        <li class="legend__item" data-category="Electronic">
+                            <span class="legend__category">Электроннки</span>
+                            <div class="legend__price" id = "Legend-price-Electronic"></div>
+                        </li>
+                        <li class="legend__item" data-category="Auto">
+                            <span class="legend__category">Автомобили</span>
+                            <div class="legend__price" id = "Legend-price-Auto"></div>
+                        </li>
+                        <li class="legend__item" data-category="Plants">
+                            <span class="legend__category">Растения</span>
+                            <div class="legend__price" id = "Legend-price-Plants"></div>
+                        </li>
+                        <li class="legend__item" data-category="Fertilizers">
+                            <span class="legend__category">Удобрения</span>
+                            <div class="legend__price" id = "Legend-price-Fertilizers"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main__column purcashes">
+                <table class="purcashes__table">
+                    <thead class="purcashes__header">
+                        <tr class="purcashes__row">
+                            <td class="purcashes__td">Наименование</td>
+                            <td class="purcashes__td">Категория</td>
+                            <td class="purcashes__td">Цена</td>
+                            <td class="purcashes__td">Закрыть</td>
+                        </tr>
+                    </thead>
+                    <tbody class="purcashes__list" id="table">
+                    </tbody>
+                </table>
+            </div>
+            <div class="main__column editor">
+                <form class="editor__form" name="form">
+                    <div class="editor__form-row">
+                        <p class="editor__form-input-name">Товар:</p>
+                        <input type="text" class="editor__form-input" name="name" id = "nameInput" placeholder="Наименование"
+                            autocomplete="off">
+                    </div>
+                    <div class="editor__form-row">
+                        <p class="editor__form-input-name">Цена:</p>
+                        <input type="text" class="editor__form-input" name="price" id = "priceInput" placeholder="0" autocomplete="off">
+                    </div>
+                    <div class="editor__form-row">
+                        <p class="editor__form-input-name">Категория:</p>
+                        <select name="select-category" id="selectCategory" class="editor__form-input">
+                            <option value="Products">Продукты</option>
+                            <option value="FastFoods">ФастФуд</option>
+                            <option value="Sport">Спорт</option>
+                            <option value="Drinks">Напитки</option>
+                            <option value="Household">Бытовые</option>
+                            <option value="Electronic">Электроннки</option>
+                            <option value="Auto">Автомобили</option>
+                            <option value="Plants">Растения</option>
+                            <option value="Fertilizers">Удобрения</option>
+                        </select>
+                    </div>
+                    <div class="editor__form-row">
+                        <button class="btn" id = "addBtn" name="addBtn">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
